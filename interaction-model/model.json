@@ -1,0 +1,62 @@
+{
+  "intents": [
+    {
+      "name": "AMAZON.CancelIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.HelpIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.StopIntent",
+      "samples": []
+    },
+    {
+      "name": "GetLogs",
+      "samples": [
+        "GetLogs pull logs from {Environment}",
+        "GetLogs pull logs from the {Environment} server"
+      ],
+      "slots": [
+        {
+          "name": "Environment",
+          "type": "LIST_OF_ENVIRONMENTS",
+          "samples": []
+        }
+      ]
+    }
+  ],
+  "types": [
+    {
+      "name": "LIST_OF_ENVIRONMENTS",
+      "values": [
+        {
+          "name": {
+            "value": "production"
+          }
+        },
+        {
+          "name": {
+            "value": "q.a.2"
+          }
+        },
+        {
+          "name": {
+            "value": "q.a."
+          }
+        },
+        {
+          "name": {
+            "value": "dev"
+          }
+        },
+        {
+          "name": {
+            "value": "pre-dev"
+          }
+        }
+      ]
+    }
+  ]
+}
